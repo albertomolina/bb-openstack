@@ -38,22 +38,20 @@
 
     <div class="reveal">
 
-      <div class="title">
-	<h3>OpenStack</h3>
-	<p>
-	  <a href="http://albertomolina.wordpress.com">Alberto Molina Coballes</a>
-	</p>
-	<p>
-	  <a href="http://creativecommons.org/licenses/by-sa/3.0/">
-	    <img src="img/cc_by_sa.png" width="100px" class="plain"/></a>
-	</p>
-	<p><small>Theme by: <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a></small></p>
-      </div>
       <!-- Any section element inside of this container is displayed as a slide -->
       <div class="slides">
-	<!-- <section data-background="img/fondo-bitnami1.png"> -->
-	<!-- </section> -->
-
+	<title data-background="img/fondo-bitnami1.png">
+	  <h3>OpenStack</h3>
+	  <p>
+	    <a href="http://albertomolina.wordpress.com">Alberto Molina Coballes</a>
+	  </p>
+	  <p>
+	    <a href="http://creativecommons.org/licenses/by-sa/3.0/">
+	      <img src="img/cc_by_sa.png" width="100px" class="plain"/></a>
+	  </p>
+	  <p><small>Theme by: <a href="http://lab.hakim.se/reveal-js/#/">reveal.js</a></small></p>
+	</title>
+	
 	<section data-background="img/fondo-bitnami2.png">
 	  <h3>Table of Contents</h3>
 	  <ul>
@@ -77,18 +75,18 @@
 	    <h3 style="color:white; text-decoration:underline">Infrastructure evolution</h3>
 	  </section>
 	  <section>
-	    <h4>Infrastructure evolution</h4>
-	    <h5>What's infrastructure?</h5>
+	    <h3>Infrastructure evolution</h3>
+	    <h4>What's infrastructure?</h4>
 	    <p>Processing, interconnection and data storage equipment</p>
-	    <h5>Evolution</h5>
-/	    <ol>
+	    <h4>Evolution</h4>
+	    <ol>
 	      <li>Physical servers</li>
 	      <li>Virtual machines</li>
 	      <li>Cloud infrastructure</li>
 	    </ol>
 	  </section>
 	  <section>
-	    <h4>Traditional infrastructure</h4>
+	    <h3>Traditional infrastructure</h3>
 	    <ul>
 	      <li>Equipment purchase</li>
 	      <li>Rack mount</li>
@@ -101,17 +99,17 @@
 	    </ul>
 	  </section>
 	  <section>
-	    <h4>Virtual Machines</h4>
+	    <h3>Virtual Machines</h3>
 	    <ul>
 	      <li>Several VMs running on a physical machine</li>
 	      <li>VMs managed by the hypervisor</li>
 	      <li>VMs connected through virtual networks</li>
 	      <li>Without significant changes in storage</li>
-	      <li>Similar management to traditional infrastructure<li>
+	      <li>Similar management to traditional infrastructure</li>
 	    </ul>
 	  </section>
 	  <section>
-	    <h4>Cloud Infrastructure</h4>
+	    <h3>Cloud Infrastructure</h3>
 	    <ul>
 	      <li>Machines virtualization</li>
 	      <li>Network virtualization</li>
@@ -128,11 +126,11 @@
 	</section>
 	
 	<section data-background="img/fondo-bitnami2.png">
-	  <section data-background="img/fondo-bitnami3.png">
-	    <h4 style="color:white">From public to private clouds</h4>
+	  <section style="text-align: left;" data-background="img/fondo-bitnami3.png">
+	    <h3 style="color:white; text-decoration:underline">From public to private clouds</h3>
 	  </section>
 	  <section>
-	    <h4>The NIST Definition: Essential characteristics</h4>
+	    <h3>The NIST Definition: Essential characteristics</h3>
 	    <ul>
 	      <li>On demand self-service</li>
 	      <li>Broad network access</li>
@@ -142,7 +140,7 @@
 	    </ul>
 	  </section>
 	  <section>
-	    <h4>The NIST Definition: Deployments models</h4>
+	    <h3>The NIST Definition: Deployments models</h3>
 	    <ul>
 	      <li>Public cloud</li>
 	      <li>Private Cloud</li>
@@ -150,7 +148,7 @@
 	    </ul>
 	  </section>
 	  <section>
-	    <h4>The NIST Definition: Service model</h4>
+	    <h3>The NIST Definition: Service model</h3>
 	    <ul>
 	      <li>Software as a Service (SaaS)</li>
 	      <li>Platform as a Service (PaaS)</li>
@@ -173,7 +171,7 @@
 	  </section>
 	</section>
 	<section>
-	  <h4>Why a private cloud?</h4>
+	  <h3>Why a private cloud?</h3>
 	  <ul>
 	    <li>Private cloud software can become the key component of a private datacenter</li>
 	    <li>Public cloud are fine and an easy option for many cases, but what about ...
@@ -186,7 +184,7 @@
 	      </ul>
 	</section>
 	<section>
-	  <h4>Infrastructure as a Service</h4>
+	  <h3>Infrastructure as a Service</h3>
 	  <ul>
 	    <li>Public cloud providers: AWS, GCE & Azure. Is there
 	    room for someone else?</li>
@@ -197,6 +195,195 @@
 	  </ul>
 	</section>
 	
+	<section data-background="img/fondo-bitnami2.png">
+	  <section style="text-align: left;" data-background="img/fondo-bitnami3.png">
+	    <h3 style="color:white; text-decoration:underline">Open
+	      Source Cloud Platforms</h3>
+	  </section>
+	  <section>
+	    <h3>CloudStack</h3>
+	    <ul>
+	      <li>Former cloud.com</li>
+	      <li>Purchased by citrix on 2011</li>
+	      <li>Donated to Apache Software Foundation on 2012</li>
+	      <li>Supports VMware, KVM, XenServer, XCP and Hyper-V
+	      <li>Easy to use Web interface</li>
+	      <li>Claims to be compatible with AWS EC2 and S3
+		APIs</li>
+	      <li>Jan 2016: Citrix sells CloudPlatform, CloudPortal
+		products to Accelerite</li>
+	      <li><a href="http://cloudstack.apache.org/">http://cloudstack.apache.org/</a></li>
+	    </ul>
+	  </section>
+	  <section>
+	    <h3>Eucalyptus</h3>
+	    <ul>
+	      <li>Oldest and most mature? Open Source Cloud
+		platform</li>
+	      <li>Focus on AWS compatibility</li>
+	      <li>Licensing issues in the past (Open core?)</li>
+	      <li>Supports VMware, KVM and Xen</li>
+	      <li>euca2ools: AWS compatible CLI</li>
+	      <li>Developed by Eucalyptus Systems</li>
+	      <li>Eucalyptus Systems purchased by HP in Sept 2014</li>
+	    </ul>
+	  </section>
+	  <section>
+	    <h3>OpenNebula</h3>
+	    <ul>
+	      <li>Data Center Virtualization Software</li>
+	      <li>Claims to be a VMware vCloud competitor</li>
+	      <li>Compatible with AWS EC2 API</li>
+	      <li>OpenNebula Marketplace</li>
+	      <li>Developed by OpenNebula Community</li>
+	      <li>Easier to install and configure?</li>
+	    </ul>
+	  </section>
+	  <section>
+	    <h3>The numbers of the Open Cloud</h3>
+	    <p>See bitergia's talk at OpenStack Summit:</p>
+	    <ul>
+	      <li><a href="https://speakerdeck.com/jgbarah/the-numbers-of-the-open-cloud-tokyo-edition">https://speakerdeck.com/jgbarah/the-numbers-of-the-open-cloud-tokyo-edition</a></li>
+	      <li><a href="https://www.youtube.com/watch?v=jipTERrdt9E">https://www.youtube.com/watch?v=jipTERrdt9E</a></li>
+	    </ul>
+	  </section>
+	</section>
+
+	<section data-background="img/fondo-bitnami2.png">
+	  <section style="text-align: left;" data-background="img/fondo-bitnami3.png">
+	    <h3 style="color:white; text-decoration:underline">Why
+	      OpenStack?</h3>
+	  </section>
+	  <section>
+	    <h3>OpenStack</h3>
+	    <img src="img/openstack-software-diagram.png" />
+		<blockquote>Open source software for creating private
+		  and public clouds</blockquote>
+	  </section>
+	  <section>
+	    <h3>OpenStack releases</h3>
+	    <table>
+	      <col style="width: 34%" />
+	      <col style="width: 16%" />
+	      <col style="width: 34%" />
+	      <col style="width: 16%" />
+	      <tr>
+		<th>Release</th>
+		<th>Date</th>
+		<th>Release</th>
+		<th>Date</th>
+	      </tr>
+	      <tr>
+		<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Austin">Austin</a></td>
+		<td>Oct'10</td>
+		<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Bexar">Bexar</a></td>
+		<td>Feb'11</td>
+	      </tr>
+	      <tr>
+		<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Cactus">Cactus</a></td>
+		<td>Apr'11</td>
+		<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Diablo">Diablo</a></td>
+		<td>Sep'11</td>
+	      </tr>
+	      <tr>
+		<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Essex">Essex
+		    (2012.1)</a></td>
+		<td>Apr'12</td>
+		<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Folsom">Folsom
+		    (2012.2)</a></td>
+		<td>Oct'12</td>
+	      </tr>
+	      <tr>
+		<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Grizzly">Grizzly
+		    (2013.1)</a></td>
+		<td>Apr'13</td>
+		<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Havana">Havana
+		    (2013.2)</a></td>
+		<td>Oct'13</td>
+	      </tr>
+	      <tr>
+		<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Icehouse">Icehouse
+		    (2014.1)</a></td>
+		<td>Apr'14</td>
+		<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Juno">Juno
+		    (2014.2)</a></td>
+		<td>Oct'14</td>
+	      </tr>
+	      <tr>
+		<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Kilo">Kilo
+		    (2015.1)</a></td>
+		<td>Apr'15</td>
+		<td><a href="https://wiki.openstack.org/wiki/ReleaseNotes/Liberty">Liberty</a></td>
+		<td>Oct'15</td>
+	      </tr>
+	      <tr>
+		<td>Mitaka</td>
+		<td>Apr'16</td>
+	      </tr>
+	    </table>
+	    <p><small><a href="https://wiki.openstack.org/wiki/Releases">https://wiki.openstack.org/wiki/Releases</a></small></p>
+	  </section>
+	  <section>
+	    <h3>Collaborative development</h3>
+	    <ul>
+	      <li> <a href="http://bitergia.com/">Bitergia</a> makes
+		different analysis about OpenStack development</li>
+	      <li><a href="http://blog.bitergia.com/2015/04/30/kilo-the-new-openstack-release/">Kilo:
+		  the new OpenStack release</a></li>
+	      <li><a href="http://activity.openstack.org/dash/browser/">OpenStack
+		  activity dashboard</a></li>
+	      <li><a href="https://6d8316ac574a2a54a69bb17a7d161ed6.us-east-1.aws.found.io/#/dashboard/OpenStack-Git-Activity-v2">OpenStack code contributions dashboard</a></li>
+	  </section>
+	  <section>
+	    <h3>OpenStack Foundation</h3>
+	    <ul>
+	      <li>Founded to promote OpenStack development, distribution and
+	        adoption</li>
+	      <li>Open to everyone</li>
+	      <li>Free individual
+	      membership: <a href="https://www.openstack.org/join/register/?membership-type=community">Community
+	      member</a>
+	      or <a href="https://www.openstack.org/join/register/?membership-type=foundation">Foundation
+		  member</a></li>
+	      <li>Companies can participate as Platinum members, Gold
+	      members, Corporate Sponsors or Supporting Organizations</li>
+	    </ul>
+	    <small><p><a href="https://www.openstack.org/join/">Join The OpenStack Foundation</a></p>
+	      <p><a href="www.openstack.org/foundation/companies/">Companies
+		  Supporting The OpenStack Foundation</a></p>
+	      <p><a href="https://www.openstack.org/legal/">OpenStack Legal Documents</a></p></small>
+	  </section>
+	  <section>
+	    <h3>OpenStack Foundation. Organization</h3>
+	    <ul>
+	      <li><a href="https://www.openstack.org/foundation/tech-committee/">Technical
+	            Commitee (13 members elected by active
+	          developers)</li>
+	      <li><li><a href="https://www.openstack.org/foundation/board-of-directors/">Board
+		          of directors</li>: Strategic and financial
+		          oversight. 8 platinum members, 8 gold
+		          members and 8 individual members</li>
+	      <li><a href="https://www.openstack.org/foundation/user-committee/">User
+		  commitee</li>
+	    </ul>
+	    <section>
+	      <h3>OpenStack Principles</h3>
+	      <ul>
+		<li>All of the code for OpenStack is freely available
+		  under the Apache 2.0 license</li>
+		<li>Support all Available Hypervisors</li>
+		<li>Implement REST APIs and Open Image Format</li>
+		<li>Open design process:
+		  <ul>
+		    <li>Blueprints</li>
+		    <li>Public repositories (github)</li>
+		  </ul>
+		<li>Commitment to drive and adopt open standards</li>
+		<li>Open community and transparency</li>
+		<a href="http://www.openstack.org/assets/openstack-welcome-guide.pdf">OpenStack Community. Welcome Guide</a>
+	      </ul>
+	  </section>
+	  
       </div>
     </div>
 

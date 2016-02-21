@@ -23,7 +23,7 @@ body {
   background: rgba(0, 0, 0, 0.99);
   text-shadow: none; }
 
-.reveal .title {
+.reveal .slides > title {
     top: 350px;
 }
 .reveal .slides > section,
