@@ -23,6 +23,13 @@ body {
   background: rgba(0, 0, 0, 0.99);
   text-shadow: none; }
 
+.reveal .slides > section > title {
+    height: 50%;
+}
+
+.reveal .slides > section > subtitle {
+    height: 50%;
+}
 .reveal .slides > section,
 .reveal .slides > section > section {
   line-height: 1.3;
