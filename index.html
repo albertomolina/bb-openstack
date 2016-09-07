@@ -539,8 +539,8 @@
 		              available</a></li>
 		<li>Next summits:
 		      <ul>
-			<li>April 2016: Austin</li>
 			<li>October 2016: Barcelona</li>
+			<li>May 2017: Boston</li>
 		</ul></li>
 	      </ul>
 	      <p><a href="https://www.openstack.org/summit/">OpenStack
@@ -580,53 +580,72 @@
 	    </ul>
 	  </section>
 	</section>
-
+	<section data-background="img/fondo-bitnami2.png">
+	  <section style="text-align: left;" data-background="img/fondo-bitnami3.png">
+	    <h3 style="color:white; text-decoration:underline">OpenStack and containers</h3>
+	  </section>
+	  <section>
+	    <h3>OpenStack and containers</h3>
+	    <p>Multiple approaches:</p>
+	    <ul>
+	      <li><a href="http://kubernetes.io/docs/getting-started-guides/openstack-heat/">Kubernetes heat template</a></li>
+	      <li><a href="http://apps.openstack.org/#tab=murano-apps&asset=Docker%20%26%20Kubernetes%20Bundle">Murano app</a></li>
+	      <li><a href="https://github.com/openstack/nova-docker">nova-docker</a></li>
+	      <li><a href="https://wiki.openstack.org/wiki/Magnum">OpenStack Magnum</a></li>
+	      <li><a href="http://docs.openstack.org/developer/kolla/">OpenStack
+		  Kolla</a></li>
+	      <li>Complete integration example: OpenStack (Ironic, Neutron,
+		Nova, Heat) + Mesos +
+		Docker <a href="https://www.youtube.com/watch?v=OjXII11hYwc">Mesos/Docker clusters with Ironic : A Match Made in Heaven</a></li>
+	    </ul>
+	  </section>
+	</section>
 	<section data-background="img/fondo-bitnami2.png">
 	  <section style="text-align: left;" data-background="img/fondo-bitnami3.png">
 	    <h3 style="color:white; text-decoration:underline">Private cloud administration</h3>
 	  </section>
-	  <section>
-	    <h3>Enterprise "legacy" applications</h3>
-	    <ul>
-	      <li>Not fault-tolerant</li>
-	      <li>Must run on smart hardware</li>
-	      <li>Typically scales up</li>
-	      <li>Runs on long-lived machines (virtual or not)</li>
-	      <li>Redundancy provided by a lower level</li>
-	    </ul>
-	  </section>
-	  <section>
-	    <h3>"Cloud ready" applications</h3>
-	    <ul>
-	      <li>Fault-tolerant (resilience)</li>
-	      <li>Typically runs on short-lived machines</li>
-	      <li>Scale out</li>
-	      <li>Elasticity</li>
-	      <li>Smart applications</li>
-	      <li>Conventional hardware</li>
-	      <li>Automation</li>
-	      <li>Agility</li>
-	      <li>DevOps</li>
-	    </ul>
-	  </section>
-	  <section>
-	    <h3>"Cloud ready" or "legacy" applications?</h3>
-	    <ul>
-	      <li>Most current workloads are not cloud ready</li>
-	      <li>IaaS is an evolution of virtualization for legacy
-		applications (virtualization 2.0)</li>
-	      <li>Block storage is a SAN equivalent</li>
-	      <li>Load balancers vs high availability clusters</li>
-	      <li>Re-architecting legacy applications</li>
-	      <li>What about cotainers? Is docker accelerating the
-		adoption of modern applications?</li>
-	    </ul>
-	    <p><small><a href="http://www.slideshare.net/KeithBasil/basil-w-0230introoverviewopenstackiaascloudsfinal">Keith
-	    Basil - Introduction and Overview of OpenStack for
-		  IaaS</a></small></p>
-	    <p><small><a href="http://www.slideshare.net/randybias/pets-vs-cattle-the-elastic-cloud-story">Randy
-	    Bias - Pets vs. Cattle: The Elastic Cloud Story</a></small></p>
-	  </section>
+	  <!-- <section> -->
+	  <!--   <h3>Enterprise "legacy" applications</h3> -->
+	  <!--   <ul> -->
+	  <!--     <li>Not fault-tolerant</li> -->
+	  <!--     <li>Must run on smart hardware</li> -->
+	  <!--     <li>Typically scales up</li> -->
+	  <!--     <li>Runs on long-lived machines (virtual or not)</li> -->
+	  <!--     <li>Redundancy provided by a lower level</li> -->
+	  <!--   </ul> -->
+	  <!-- </section> -->
+	  <!-- <section> -->
+	  <!--   <h3>"Cloud ready" applications</h3> -->
+	  <!--   <ul> -->
+	  <!--     <li>Fault-tolerant (resilience)</li> -->
+	  <!--     <li>Typically runs on short-lived machines</li> -->
+	  <!--     <li>Scale out</li> -->
+	  <!--     <li>Elasticity</li> -->
+	  <!--     <li>Smart applications</li> -->
+	  <!--     <li>Conventional hardware</li> -->
+	  <!--     <li>Automation</li> -->
+	  <!--     <li>Agility</li> -->
+	  <!--     <li>DevOps</li> -->
+	  <!--   </ul> -->
+	  <!-- </section> -->
+	  <!-- <section> -->
+	  <!--   <h3>"Cloud ready" or "legacy" applications?</h3> -->
+	  <!--   <ul> -->
+	  <!--     <li>Most current workloads are not cloud ready</li> -->
+	  <!--     <li>IaaS is an evolution of virtualization for legacy -->
+	  <!-- 	applications (virtualization 2.0)</li> -->
+	  <!--     <li>Block storage is a SAN equivalent</li> -->
+	  <!--     <li>Load balancers vs high availability clusters</li> -->
+	  <!--     <li>Re-architecting legacy applications</li> -->
+	  <!--     <li>What about cotainers? Is docker accelerating the -->
+	  <!-- 	adoption of modern applications?</li> -->
+	  <!--   </ul> -->
+	  <!--   <p><small><a href="http://www.slideshare.net/KeithBasil/basil-w-0230introoverviewopenstackiaascloudsfinal">Keith -->
+	  <!--   Basil - Introduction and Overview of OpenStack for -->
+	  <!-- 	  IaaS</a></small></p> -->
+	  <!--   <p><small><a href="http://www.slideshare.net/randybias/pets-vs-cattle-the-elastic-cloud-story">Randy -->
+	  <!--   Bias - Pets vs. Cattle: The Elastic Cloud Story</a></small></p> -->
+	  <!-- </section> -->
 	  <section>
 	    <h3>Cloud administration</h3>
 	    <ul>
